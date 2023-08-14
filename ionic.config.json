@@ -1,0 +1,7 @@
+{
+  "name": "chill-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
