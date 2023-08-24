@@ -1,0 +1,212 @@
+.temp-home {
+  --background: url('./../../assets/images/wallpaper/wallpaper.svg') repeat center center / cover;
+  --padding-top: 40px;
+  --display: grid !important;
+}
+
+.content-search {
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+  width: 100%;
+
+  .sc-ion-input-ios-h {
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+  }
+}
+
+.row {
+  width: 100%;
+}
+
+
+.content-info {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  display: grid;
+  * {
+    color: black;
+  }
+
+  .swiper-container{
+    height: auto !important;
+  }
+
+  border-radius: 30px 30px 0px 0px;
+  -webkit-border-radius: 30px 30px 0px 0px;
+  -moz-border-radius: 30px 30px 0px 0px;
+  -ms-border-radius: 30px 30px 0px 0px;
+  -o-border-radius: 30px 30px 0px 0px;
+}
+
+ion-grid {
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+}
+
+.row-info {
+  flex-grow: 1;
+}
+
+
+.container-swiper {
+  display: grid;
+}
+
+.swiper-container {
+  overflow: hidden;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+::ng-deep .swiper {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.swiper {
+  z-index: 0 !important;
+}
+
+.custom-swiper {
+  ::ng-deep .swiper-button-prev {
+    left: 20px !important;
+  }
+
+  ::ng-deep .swiper-button-prev,
+  ::ng-deep .swiper-button-next {
+    color: white !important;
+
+    &::after {
+      font-size: 30px !important;
+    }
+  }
+
+  ::ng-deep .swiper-button-next {
+    right: 20px !important;
+  }
+
+
+  ::ng-deep .swiper {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  &-horizontal {
+    @extend .custom-swiper;
+
+    ::ng-deep .swiper-slide {
+      max-width: 400px !important;
+      width: 400px !important;
+    }
+  }
+}
+
+.content-banner {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: var(--chill-black);
+  min-height: 150px;
+  padding: 10px 15px;
+
+  .img {
+    position: relative;
+    width: 80px;
+
+    img {
+      position: absolute;
+      width: 140px;
+      max-width: none !important;
+      z-index: 0;
+    }
+  }
+
+  .info {
+    z-index: 1;
+    text-align: end;
+    display: grid;
+    align-content: space-around;
+    justify-items: end;
+    .title {
+      font-size: 28px;
+    }
+
+    ion-button.btn-show {
+      --padding-top: 5px;
+      --padding-bottom: 5px;
+      --padding-start:10px;
+      --padding-end:10px;
+      font-size:12px !important;
+      font-weight: 600 !important;
+    }
+  }
+
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.swiper-content-product{
+    max-width: 200px;
+}
+
+
+.swiper-container-product{
+  ::ng-deep.swiper-slide{
+    max-width: max-content;
+    margin:7px;
+  }
+
+  .card-product{
+    display: grid;
+    justify-items: center;
+
+    ion-card-content{
+      padding-top: 0px !important;
+    }
+  }
+
+}
+
+.swiper-container-sale{
+  ::ng-deep.swiper-slide{
+    max-width: max-content;
+    margin:7px;
+  }
+
+  .card-product{
+    display: grid;
+    justify-items: center;
+    .title{
+      font-size: 12px;
+    }
+    ion-card-content{
+      padding-top: 0px !important;
+      justify-items: center;
+      display: grid;
+      gap: 10px;
+      ion-button {
+        --padding-top: 10px;
+        --padding-bottom: 10px;
+        --padding-start:15px;
+        --padding-end:15px;
+        font-size:14px !important;
+        font-weight: 400 !important;
+        color:white !important;
+        ion-icon{
+          color: white !important;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

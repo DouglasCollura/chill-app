@@ -1,0 +1,58 @@
+<ion-content class="ion-padding temp-auth">
+
+  <ion-grid class="gap-30 justify-items-center" >
+    <ion-row>
+      <img src="/assets/images/logo.svg" width="120" alt="">
+    </ion-row>
+
+    <ion-row>
+      <mat-tab-group color="primary">
+        <mat-tab label="iniciar sesión">
+
+          <h1 class="text-center font-400">inicio de sesión</h1>
+          <form [formGroup]="formLogin" class="form" (submit)="login()" >
+
+            <ion-input labelPlacement="stacked" formControlName="email" >
+              <div slot="label">Correo electrónico <ion-text color="danger" *ngIf="getFieldInvalidLogin('email')" >(Requerido)</ion-text></div>
+            </ion-input>
+
+            <ion-input labelPlacement="stacked" type="password" formControlName="password" >
+              <div slot="label">Contraseña <ion-text color="danger" *ngIf="getFieldInvalidLogin('password')" >(Requerido)</ion-text></div>
+            </ion-input>
+
+            <ion-button fill="clear" class="btn-recovery-pass"> ¿Has olvidado tu contraseña? </ion-button>
+
+            <ion-button shape="round" type="submit" >iniciar sesión</ion-button>
+          </form>
+
+        </mat-tab>
+        <mat-tab label="Registrate">
+          <h1 class="text-center font-400">únete a la experiencia chill</h1>
+
+          <form  [formGroup]="formSignup" class="form" (submit)="signUp()" >
+
+            <ion-input labelPlacement="stacked" formControlName="names">
+              <div slot="label">Nombre y Apellido <ion-text color="danger" *ngIf="getFieldInvalidSignup('names')" >(Requerido)</ion-text></div>
+            </ion-input>
+
+            <ion-input labelPlacement="stacked" formControlName="email">
+              <div slot="label">Correo electrónico <ion-text color="danger" *ngIf="getFieldInvalidSignup('email')">(Requerido)</ion-text></div>
+            </ion-input>
+
+            <ion-input labelPlacement="stacked" type="password" formControlName="password">
+              <div slot="label">Contraseña <ion-text color="danger" *ngIf="getFieldInvalidSignup('password')">(Requerido)</ion-text></div>
+            </ion-input>
+
+            <ion-input labelPlacement="stacked" type="password" formControlName="confirm_password">
+              <div slot="label">Confirmar contraseña <ion-text color="danger" *ngIf="getFieldInvalidSignup('confirm_password')">(Requerido)</ion-text></div>
+            </ion-input>
+
+
+            <ion-button shape="round" type="submit" >registrarme</ion-button>
+          </form>
+        </mat-tab>
+      </mat-tab-group>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,71 @@
+.temp-auth {
+  --background: url('./../../assets/images/wallpaper/wallpaper.svg') repeat center center / cover;
+  --padding-top: 40px;
+}
+
+
+.mat-mdc-tab-group {
+  --mdc-tab-indicator-active-indicator-color: var(--chill-red) !important;
+  --mat-tab-header-active-hover-indicator-color: var(--chill-red) !important;
+  --mat-tab-header-active-focus-indicator-color: var(--chill-red) !important;
+  --mat-tab-header-active-label-text-color: black !important;
+  --mat-tab-header-active-focus-label-text-color: black !important
+}
+
+::ng-deep .mat-mdc-tab-labels {
+  background-color: white !important;
+  width: 100%;
+  padding-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+}
+
+::ng-deep .mat-mdc-tab-header {
+  --mdc-tab-indicator-active-indicator-height: 6px !important;
+  --mdc-secondary-navigation-tab-container-height: 60px !important;
+}
+
+::ng-deep .mdc-tab {
+  padding-right: 40px !important;
+  padding-left: 40px !important;
+}
+
+::ng-deep .mat-mdc-tab-body-content {
+  background-color: var(--chill-black);
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
+}
+
+
+
+.form{
+  display: grid;
+  justify-items: center;
+  gap: 15px;
+
+  .btn-recovery-pass{
+    color: white !important;
+    font-size: 12px;
+  }
+
+  ::ng-deep .native-input.sc-ion-input-ios {
+    margin-top: 10px !important;
+    padding: 10px;
+    outline: 1.5px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+}
+.sc-ion-input-ios-h{
+  --color: white !important;
+}
